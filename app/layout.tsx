@@ -1,7 +1,7 @@
 "use client";
 import "../styles/globals.css";
 import Navigation from "../components/Navigation";
-import { defaultTheme } from "../themes";
+import { darkTheme, defaultTheme, lightTheme } from "../themes";
 import { ThemeProvider, CssBaseline } from "@mui/material";
 
 export default function RootLayout({
@@ -16,7 +16,6 @@ export default function RootLayout({
       </head>
       <body>
         <ThemeProvider theme={defaultTheme}>
-          <Navigation />
           <CssBaseline />
           {children}
         </ThemeProvider>
